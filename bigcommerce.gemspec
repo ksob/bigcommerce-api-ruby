@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name = 'bigcommerce'
   s.version = Bigcommerce::VERSION
   s.platform = Gem::Platform::RUBY
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 3.0'
   s.license = 'MIT'
 
   s.authors = ['BigCommerce Engineering']
@@ -20,8 +20,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'rake'
 
-  s.add_dependency 'faraday', '~> 1.10.0'
-  s.add_dependency 'faraday_middleware', '~> 1.0'
+  s.add_dependency 'faraday', '~> 2.12'
+  s.add_dependency 'faraday-gzip', '~> 3'
   s.add_dependency 'hashie', '~> 3.4'
   s.add_dependency 'jwt', '~> 1.5.4'
 end
